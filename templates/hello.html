@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block heading%}
+	First Page
+{% endblock %}
+
+
+{% block body%}
+
+<article class="media content-section">
+	<div class="media-body">
+	  <div class="article-metadata">
+		<a class="mr-2" href="#">Anel Zhumanova (author of the post)</a>
+		<small class="text-muted">10/10/2019</small>
+	  </div>
+	  <h2><a class="article-title" href="#">Blog post for the Flask Blog app (title of the post)</a></h2>
+	  <p class="article-content">Hey this is a project example of Flusk application I am working on(content of the post)</p>
+	</div>
+  </article>
+
+<a href="{{ url_for('about') }}">Go Back</a>
+{% endblock %}
