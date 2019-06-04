@@ -11,7 +11,7 @@
         {{ form.hidden_tag() }}
         <fieldset class="form-group">
             <legend class="border-bottom mb-4">Join Today</legend>
-
+            <!-- username filed -->
             <div class="form-group">
 
                 {{ form.username.label(class="form-control-label") }}
@@ -27,6 +27,7 @@
                 {% endif %}
                 
             </div>
+            <!-- email filed -->
             <div class="form-group">
 
                 {{ form.email.label(class="form-control-label") }}
@@ -42,6 +43,7 @@
                 {% endif %}
 
             </div>
+            <!-- password field -->
             <div class="form-group">
                 {{ form.password.label(class="form-control-label") }}
                 {% if form.password.errors %}
@@ -55,6 +57,7 @@
                     {{ form.password(class="form-control form-control-lg") }}
                 {% endif %}
             </div>
+            <!-- confirmation of the password field-->
             <div class="form-group">
                 {{ form.confirm_password.label(class="form-control-label") }}
                 {% if form.confirm_password.errors %}
