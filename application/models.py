@@ -26,4 +26,4 @@ class Post(db.Model):
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
 
     def __repr__(self):
-        return "Post ('{}'), ('{}')".format(self.title, self.date_posted)
+        return "Post ('{}'), ('{}')".format(self.title.encode("utf-8"), self.date_posted)
