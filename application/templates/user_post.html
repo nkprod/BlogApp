@@ -1,6 +1,6 @@
 {% extends "layout.html" %}
 
-{% block body%}
+{% block body %}
     <h2 class="mb-3">Posted by {{ user.username }} ({{ posts.total }})</h2>
 	{% for post in posts.items %}
 		<article class="media content-section">
